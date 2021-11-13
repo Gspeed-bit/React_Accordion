@@ -24,7 +24,7 @@ export const Question = () => {
           return (
             <div className="question_casing">
                 <div  className="wrapper">  
-              <div className="containers">
+              <div className="wrapper-2">
                   {/* This button toggles and time it is clicked */}
                 <button onClick={() => flip(index)}  className="btn">
                   {clicked === index ? <FaMinusCircle  />: <FaPlusCircle />}
