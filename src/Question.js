@@ -22,11 +22,11 @@ export const Question = () => {
               {/* .map call back was used here to get the index and the content of the array */}
         {data.map((item, index) => {
           return (
-            <div className="question_casing">
-                <div  className="wrapper">  
-              <div className="wrapper-2">
+            <div className="question_casing"  key ={item.id}>
+                <div  className="wrapper"  >  
+              <div className="wrapper-2"   >
                   {/* This button toggles and time it is clicked */}
-                <button onClick={() => flip(index)}  className="btn">
+                <button  onClick={() => flip(index)} className="btn">
                   {clicked === index ? <FaMinusCircle  />: <FaPlusCircle />}
                 </button>
                </div>
